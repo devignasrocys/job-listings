@@ -1,0 +1,134 @@
+/* RESET */
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dde7e7;
+}
+
+.header {
+    width: 100%;
+
+}
+
+.svg-mobile {
+    width: 100%;
+}
+
+.svg-mobile path {
+    fill: #63BABA;
+}
+
+.svg-desktop {
+    display: none;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-top: -2rem;
+    -webkit-box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
+    box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
+    border-radius: .5rem;
+}
+
+.search-bar ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #d7f3f3;
+    z-index: -100;
+}
+
+.search-bar ul li p {
+    padding: .5rem;
+    font-weight: 700;
+    color: #5CA5A5;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar ul li button {
+    border: none;
+    background-color: #2B3939;
+    padding: .8rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar .cl-btn {
+    border: none;
+    background-color: transparent;
+    color: #5CA5A5;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.job-list {
+    width: 80%;
+    margin: 2rem;
+}
+.job-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    width: 100%;
+    -webkit-box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
+    box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
+}
+
+.job-card .cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-card .cell:first-of-type div:first-of-type {
+    margin-right: 2rem;
+}
+
+
+@media screen and (min-width: 435px) {
+    .svg-mobile {
+        display: none;
+    }
+    .svg-desktop {
+        display: block;
+        width: 100%;
+    }
+    .svg-desktop path {
+        fill: #63BABA;
+        opacity: .6;
+    }
+    
+}
