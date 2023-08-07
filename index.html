@@ -35,12 +35,12 @@
           </g>
         </svg>
       </header>
-      <div class="search-bar">
+      <div class="search-bar disabled">
         <div class="cell">
-            <ul>
+            <ul id="search-bar-list">
                 <li>
                     <p>FrontEnd</p>
-                    <button>X</button>
+                    <button id="clear-btn">X</button>
                 </li>
             </ul>
         </div>
@@ -49,35 +49,7 @@
         </div>
       </div>
       <section class="job-list">
-        <ul>
-            <li>
-                <div class="job-card">
-                    <div class="cell">
-                        <div>
-                            <img src="./assets/images/loop-studios.svg" alt="">
-                        </div>
-                        <div>
-                            <p>
-                                Photosnap
-                                <span>NEW!</span>
-                                <span>FEATURED</span>
-                            </p>
-                            <p>Senior Frontend Developas</p>
-                            <p>
-                                <span>5d ago</span>
-                                <span>Contract</span>
-                                <span>USE only</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cell">
-                        <span>Frontend</span>
-                        <span>Senior</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                </div>
-            </li>
+        <ul id="jobs-list">
         </ul>
       </section>
     </div>

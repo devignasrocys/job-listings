@@ -104,6 +104,7 @@ li {
     -webkit-box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
     -moz-box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
     box-shadow: 1px 20px 27px -18px rgba(66, 68, 90, 1);
+    margin: 1rem 0;
 }
 
 .job-card .cell {
@@ -117,6 +118,60 @@ li {
     margin-right: 2rem;
 }
 
+.job-card .cell:first-of-type p:first-of-type {
+    color: #5CA5A5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.job-card .cell:first-of-type p:first-of-type span {
+    color: #fff;
+    margin-left: .5rem;
+}
+
+.job-card .cell:first-of-type p:first-of-type span {
+    background-color: #5ca5a5;
+    padding: .3rem .7rem;
+    border-radius: 1.2rem;   
+}
+
+.job-card .cell:first-of-type p:first-of-type span:nth-last-of-type(1) {
+    background-color: #000;
+}
+
+.job-card .cell:first-of-type p:nth-last-of-type(2) {
+    color: #5ca5a5;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+.job-card .cell:first-of-type p:nth-last-of-type(1) span:nth-last-of-type(3),
+.job-card .cell:first-of-type p:nth-last-of-type(1) span:nth-last-of-type(2) {
+    margin-right: .8rem;
+    position: relative;
+}
+
+.job-card .cell:first-of-type p:nth-last-of-type(1) span:nth-last-of-type(3):after,
+.job-card .cell:first-of-type p:nth-last-of-type(1) span:nth-last-of-type(2):after {
+    position: absolute;
+    content: '';
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
+    background-color: dimgray;
+    top: 50%;
+    transform: translate(-50%);
+    right: -.7rem;
+}
+
+.job-card .cell:nth-last-child(1) span {
+    padding: .5rem;
+    background-color: #5ca5a5;
+    color: #fff;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 435px) {
     .svg-mobile {
@@ -131,4 +186,9 @@ li {
         opacity: .6;
     }
     
+}
+
+/* UTILITY */
+.disabled {
+    display: none;
 }
